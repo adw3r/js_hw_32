@@ -1,5 +1,5 @@
 import React from "react";
-import {InfoIcon, BagIcon, Spades} from "../../Icons.jsx";
+import {BagIcon, InfoIcon, Spades} from "../../Icons.jsx";
 import './style.scss';
 
 const defaultInfo = "Far Cry 6 is a 2021 action-adventure first-person shooter game developed by Ubisoft Toronto. It is the sixth main installment in the Far Cry series and the successor Far Cry 5.";
@@ -20,19 +20,20 @@ const handleClick = (e) => {
         infoEl.textContent = defaultInfo;
     }
 };
+
 export function Tabs() {
     return (<ul className="tabs" onClick={handleClick}>
-            <li className='active'>
-                <InfoIcon/>
-                <span className="text">Information</span>
-            </li>
-            <li>
-                <Spades/>
-                <span className="text">Ratings Info</span>
-            </li>
-            <li>
-                <BagIcon/>
-                <span className="text">where to buy</span>
-            </li>
-        </ul>);
+        <li className='active'>
+            <InfoIcon/>
+            <span className="text">Information</span>
+        </li>
+        <li>
+            <Spades/>
+            <span className="text">Ratings Info</span>
+        </li>
+        <li>
+            <BagIcon/>
+            <span className="text">where to buy</span>
+        </li>
+    </ul>);
 }

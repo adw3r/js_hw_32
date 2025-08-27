@@ -1,5 +1,6 @@
 import React from "react";
-import {Donut} from "../../Donut/Donut.jsx";
+import {Donut} from "./Donut/Donut.jsx";
+import {Stars} from "../PicInfo/Stars/Stars.jsx";
 import './style.scss';
 
 export function TextInfo() {
