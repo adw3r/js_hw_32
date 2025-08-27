@@ -1,7 +1,8 @@
 import React from "react";
-import {InfoIcon, BagIcon, Spades} from "./Icons";
+import {InfoIcon, BagIcon, Spades} from "../../Icons.jsx";
+import './style.scss';
 
-export function Tabs(props) {
+export function Tabs() {
     return (<ul className="tabs">
             <li>
                 <InfoIcon/>

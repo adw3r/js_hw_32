@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import {createRoot} from 'react-dom/client'
-import './assets/style/style.scss'
-import {initializeDonuts} from './utils/donut.js'
-import {Tabs} from "./components/Tabs";
-import {Card} from "./components/Card";
+import './main.scss'
+import {initializeDonuts} from './components/GameInfo/Donut/donut.js'
+import {GameInfo} from "./components/GameInfo/GameInfo.jsx";
+import Overlay from "./components/Overlay/Overlay.jsx";
 
 function App() {
     useEffect(() => {
@@ -12,11 +12,8 @@ function App() {
 
     return (
         <>
-            <div className="game-info">
-                <Tabs/>
-                <Card/>
-            </div>
-            <div className="overlay"></div>
+            <GameInfo/>
+            <Overlay/>
         </>
     );
 }

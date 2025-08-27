@@ -1,4 +1,3 @@
-import '../assets/style/style.scss'
 import $ from 'jquery'
 
 $.fn.donutRating = function (options) {
