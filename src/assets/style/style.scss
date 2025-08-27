@@ -1,3 +1,5 @@
+@use "fonts.min.css";
+
 :root {
   color-scheme: light dark;
   background: var(--dark-blue, #2B3040);
@@ -20,7 +22,7 @@ ul {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  background: url(./assets/img/bg-image.jpg) lightgray 50% / cover no-repeat;
+  background: url('../images/bg-image.jpg') lightgray 50% / cover no-repeat;
   height: 100vh;
 }
 .overlay {
@@ -33,20 +35,42 @@ ul {
   width: 600px;
   height: 552px;
   flex-shrink: 0;
-  .tabs {
-    display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  ul.tabs {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    background: var(--dark-blue, #2B3040);
     height: 120px;
     padding: 30px 40px;
-    justify-content: center;
     align-items: center;
     gap: 70px;
     flex-shrink: 0;
+    li {
+      span.text {
+        color: #FFF;
+        font-family: Lato, sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.75rem; /* 175% */
+        text-transform: uppercase;
+      }
+      display: flex;
+      width: 120px;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  .tabs {
+    display: inline-flex;
   }
   .card {
     display: inline-flex;
     gap: 40px;
     padding: 60px 40px;
-    justify-content: space-between;
     align-items: center;
     background: var(--deep-blue, #212534);
     .pic-info {

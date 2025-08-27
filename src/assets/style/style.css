@@ -1,3 +1,10 @@
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/lato-v24-latin-regular.woff2) format("woff2");
+}
 :root {
   color-scheme: light dark;
   background: var(--dark-blue, #2B3040);
@@ -20,7 +27,7 @@ ul li {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  background: url(./assets/img/bg-image.jpg) lightgray 50%/cover no-repeat;
+  background: url("../images/bg-image.jpg") lightgray 50%/cover no-repeat;
   height: 100vh;
 }
 
@@ -35,21 +42,43 @@ ul li {
   width: 600px;
   height: 552px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
-.game-info .tabs {
-  display: inline-flex;
+.game-info ul.tabs {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  background: var(--dark-blue, #2B3040);
   height: 120px;
   padding: 30px 40px;
-  justify-content: center;
   align-items: center;
   gap: 70px;
   flex-shrink: 0;
+}
+.game-info ul.tabs li {
+  display: flex;
+  width: 120px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.game-info ul.tabs li span.text {
+  color: #FFF;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 175% */
+  text-transform: uppercase;
+}
+.game-info .tabs {
+  display: inline-flex;
 }
 .game-info .card {
   display: inline-flex;
   gap: 40px;
   padding: 60px 40px;
-  justify-content: space-between;
   align-items: center;
   background: var(--deep-blue, #212534);
 }
