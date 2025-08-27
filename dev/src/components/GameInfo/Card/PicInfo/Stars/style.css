@@ -1,10 +1,10 @@
 .stars {
-    align-self: center;
+  align-self: center;
 }
 
 .stars-wrap {
-    display: inline-flex;
-    gap: 4px;
+  display: inline-flex;
+  gap: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */
