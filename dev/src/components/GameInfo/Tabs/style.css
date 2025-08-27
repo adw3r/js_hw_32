@@ -18,6 +18,9 @@ ul.tabs li {
   gap: 15px;
   opacity: 50%;
 }
+ul.tabs li:hover {
+  cursor: pointer;
+}
 ul.tabs li.active {
   opacity: 100%;
 }

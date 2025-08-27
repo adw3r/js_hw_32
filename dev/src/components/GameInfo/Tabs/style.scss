@@ -11,6 +11,9 @@ ul.tabs {
   flex-shrink: 0;
 
   li {
+    &:hover {
+      cursor: pointer;
+    }
     display: flex;
     width: 120px;
     flex-direction: column;
